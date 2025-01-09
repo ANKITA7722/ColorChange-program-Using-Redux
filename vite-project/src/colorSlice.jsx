@@ -7,9 +7,7 @@ const colorSlice= createSlice({
         color:"pink"
     },
     reducers:{
-        colorChange:(state)=>{
-            state.color="yellow"
-        }
+        colorChange:(state)=>{state.color="yellow" }
     }
 })
 export const {colorChange} = colorSlice.actions;
