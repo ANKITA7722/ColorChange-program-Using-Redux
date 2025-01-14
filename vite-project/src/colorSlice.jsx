@@ -1,14 +1,13 @@
-import{createSlice} from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit"
 
-const colorSlice= createSlice({
-
-    name:"mycolor",
-    initialState:{
-        color:"pink"
+const colorSlice = createSlice({
+    name: "mycolor",
+    initialState: {
+        color: "pink"
     },
-    reducers:{
-        colorChange:(state)=>{state.color="yellow" }
+    reducers: {
+        colorChange: (state) => { state.color = "yellow" }
     }
 })
-export const {colorChange} = colorSlice.actions;
+export const { colorChange } = colorSlice.actions;
 export default colorSlice.reducer;
